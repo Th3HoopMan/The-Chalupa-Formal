@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags always come first -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+
+  <!-- Navbar -->
+    <!-- <nav class="navbar navbar-light">
+      <div class="nav navbar-nav">
+        <ul id="navItems">
+          <li><a class="nav-item nav-link active" href="#titlePage"><p>Home </p><span class="sr-only">(current)</span></a></li>
+          <li><a class="nav-item nav-link" href="#introBlock"><p>Info</p></a></li>
+          <li><a class="nav-item nav-link" href="#semiFormal"><p>Semi</p></a></li>
+          <li><a class="nav-item nav-link" href="#formalBlock"><p>Formal</p></a></li>
+          <li><a class="nav-item nav-link" href="#organizersBlock"><p>Organizers</p></a></li>
+          <li><a class="nav-item nav-link" href="#inviteBlock"><p>Invite</p></a></li>
+        </ul>
+      </div>
+  </nav> -->
+
+  <!-- ./Navbar -->
+
+  <!--  Title Page-->
+    <div class="container" id="titlePage">
+      <h1 class="text-xs-center mainTitle">The Chalupa Formal</h1>
+      <h5 class="text-muted text-xs-center m-t-1" id="titleSubtext">A Night Crafted By the Gods</h5>
+    </div>
+  <!-- ./Title Page -->
+  <!--  Intro Block-->
+      <div id="introBlock" class="fullContain">
+        <div class="blackFade fullContain">
+          <div id="introBody">
+            <p class="text-xs-center"> Said to rival the Catalina Wine Mixer and the Grammy’s
+              in terms of luxury, The Chalupa Formal takes a group of guests on the adventure of a lifetime.
+              An event where the most obscure salad forks are used, where the craziest tales fall from the lips
+              of distinguished guests, and where every goblet runneth over with pure happiness. For
+              longest time this event was only a story parents told their children to behave, but no longer.
+              With a decent helping of ambition and planning the countdown has now begun. Which  mortals
+              will be invited to have their lives elevated to a status once thought unobtainable?
+            </p>
+          </div>
+        </div>
+      </div>
+  <!--  ./Intro Block-->
+  <!--  Info Block-->
+      <div id="infoBlock">
+        <div class="hidden-md-up">
+          <div class="infoEntry">
+            <h2>Join Our Origin Story</h2>
+            <%= image_tag("http://bit.ly/29IkUPQ", :alt => "Superhero Icon", :class => "img-rounded infoImage") %>
+            <p>
+              Think of some people with amazing origin stories: Spiderman, Elon Musk,
+              George P. Burdell, Michelangelo (The ninja turtle not the artist). A strong origin
+              story is what seperates the Cubones from the Magikarps. Right now we are on the verge
+              of something truly amazing. Become a part of the catalyst and
+              help us pioneer the origin story for the first of many great events.
+            </p>
+          </div>
+          <div class="infoEntry">
+            <h3>Build Unexpected Friendships</h3>
+            <%= image_tag("http://bit.ly/29A4UAS", :alt => "Friends Icon", :class => "img-rounded infoImage") %>
+            <p>
+              We sometimes get complacent in our daily lives. Take this opportunity
+              to shake things up a little. We'll be bringing people of all backgrounds
+              together to share fun and exciting experiences with one another. Maybe you'll even meet your next
+              best friend, casual friend, significant other, presedential running mate, or arch enemy. Don't pass
+              up the chance to create another meaningful relationship!
+            </p>
+          </div>
+          <div class="infoEntry">
+            <h2>Treat Yourself</h2>
+            <%= image_tag("http://bit.ly/29IkPLZ", :alt => "Crown Icon", :class => "img-rounded infoImage") %>
+            <p>
+              Look, we're eating Ramen for dinner just like you. We understand the struggle
+              of wearing your pajamas to class. Maybe we step it up just this once? Get a chance
+              to bust out the tie for something other interviews, or to buy that perfect dress that you'll
+              only wear once. Who doesn't like to live lavishly once in awhile? You only get one shot,
+              do not miss your chance to blow. This opportunity comes once in a lifetime, yo.
+            </p>
+          </div>
+
+        </div>
+        <div id="carousel-example-generic" class="carousel slide hidden-sm-down" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+            <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner" role="listbox">
+            <div class="carousel-item active">
+              <div class="infoEntry" id="infoEntry1">
+                <h1>Join Our Origin Story</h1>
+                <%= image_tag("http://bit.ly/29IkUPQ", :alt => "Superhero Icon", :class => "img-circle infoImage") %>
+                <p>
+                  Think of some people with amazing origin stories: Spiderman, Elon Musk,
+                  George P. Burdell, Michelangelo (The ninja turtle not the artist). A strong origin
+                  story is what seperates the Cubones from the Magikarps. Right now we are on the verge
+                  of something truly amazing. Become a part of the catalyst and
+                  help us pioneer the origin story for the first of many great events.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="infoEntry" id="infoEntry2">
+                <h1>Build Unexpected Friendships</h1>
+                <%= image_tag("http://bit.ly/29A4UAS", :alt => "Friends Icon", :class => "img-circle infoImage") %>
+                <p>
+                  We sometimes get complacent in our daily lives. Take this opportunity
+                  to shake things up a little. We'll be bringing people of all backgrounds
+                  together to share fun and exciting experiences with one another. Maybe you'll even meet your next
+                  best friend, casual friend, significant other, presedential running mate, or arch enemy. Don't pass
+                  up the chance to create another meaningful relationship!
+                </p>
+            </div>
+            </div>
+            <div class="carousel-item">
+              <div class="infoEntry" id="infoEntry3">
+                <h1>Treat Yourself</h1>
+                <%= image_tag("http://bit.ly/29IkPLZ", :alt => "Crown Icon", :class => "img-circle infoImage") %>
+                <p>
+                  Look, we're eating Ramen for dinner just like you. We understand the struggle
+                  of wearing your pajamas to class. Maybe we step it up just this once? Get a chance
+                  to bust out the tie for something other interviews, or to buy that perfect dress that you'll
+                  only wear once. Who doesn't like to live lavishly once in awhile? You only get one shot,
+                  do not miss your chance to blow. This opportunity comes once in a lifetime, yo.
+                </p>
+            </div>
+            </div>
+          </div>
+          <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+            <span class="icon-prev" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+            <span class="icon-next" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+      </div>
+  <!--  ./Info Block-->
+<div class="text-xs-center hidden-sm-down">_______________________________________________________________________</div>
+<!-- Semi Block -->
+
+  <div class="hidden-lg-up semiFormalMobile">
+    <div class="row eventDeets">
+      <h3 class=" p-y-2">Semi Formal</h3>
+      <ul class="p-a-1">
+        <li>Atlas</li>
+        <li>September 30, 2016</li>
+        <li>12 invites</li>
+      </ul>
+    </div>
+
+    <div class="mobileButton" id="preMobile">
+      <h2>Before</h2>
+    </div>
+    <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="preModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class=" text-xs-center semiInfo ">
+              <h2 class="p-y-2">Preparations</h2>
+              <%= image_tag("http://bit.ly/29OoKak", :alt => "Limo", :class => "img-fluid") %>
+              <p class="p-a-2 m-b-0">
+                This is it. You are approaching greatness, but there are a few things you must do first.
+                Put on your finest attire. This is not a pickup game of basketball you're going to,
+                this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
+                snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
+                start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
+                but greatnesss waits for no one, so you better be on time.
+              </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobileButton" id="duringMobile">
+      <h2>During</h2>
+    </div>
+    <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="duringModal">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class=" text-xs-center semiInfo">
+            <h2 class="p-y-2">Bliss</h2>
+            <%= image_tag("http://bit.ly/29Orp3E", :alt => "Atlas", :class => "img-fluid") %>
+            <p class="p-a-2 m-b-0">
+              Take a moment to soak it all in, The Chalupa Semi Formal is officially underway. When you arrive at
+              the pickup point you will look around and see the group of remarkable people
+              that were hand selected to partake in this experience alongside you.  The semi will be held at Atlas, one of the finest
+               restaurants Atlanta has to offer. During the dinner, the founders will
+              have very interesting announcements about a few traditions that you will have the honor
+              of helping pioneer.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="mobileButton" id="postMobile">
+      <h2>After</h2>
+    </div>
+    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="postModal">
+      <div class="modal-dialog">
+        <div class="modal-content semiModal">
+          <div class=" text-xs-center semiInfo">
+            <h2 class="p-y-2">Coup De Grace</h2>
+            <%= image_tag("http://bit.ly/29Ots83", :alt => "Night View", :class => "img-fluid") %>
+            <p class="p-a-2 m-b-0">
+              There's only so much that can be done over dinner, and that's
+              why we're headed back to campus together to unwind and get to know the group better.
+              Somebody catch your eye all night? Go talk to them. Someone seem like a possible
+              business partner? Get their contact information. As the moon rises
+              and falls, take in a deep breath, and prepare to go forth and tell the story of The Chalupa Semi-Formal.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="container fullContain semiFormal hidden-md-down">
+    <div class="row eventDeets">
+      <h4 class="col-md-2 p-t-2">Semi Formal</h4>
+      <ul class="col-md-10  divider">
+        <li>Atlas</li>
+        <li>September 30, 2016</li>
+        <li>12 invites</li>
+      </ul>
+    </div>
+
+  <div class="semiBody">
+    <div class="col-md-3 noPad semiImage" id="pre">
+      <div class="semiCover" id="preOverlay">
+        <h2 class="text-xs-center semiText">Before</h2>
+      </div>
+    </div>
+        <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="preModal">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class=" text-xs-center semiInfo ">
+                  <h2 class="p-y-2">Preparations</h2>
+                  <%= image_tag("http://bit.ly/29OoKak", :alt => "Limo", :class => "img-fluid") %>
+                  <p class="p-a-2 m-b-0">
+                    This is it. You are approaching greatness, but there are a few things you must do first.
+                    Put on your finest attire. This is not a pickup game of basketball you're going to,
+                    this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
+                    snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
+                    start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
+                    but greatnesss waits for no one, so you better be on time.
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-3 noPad semiImage" id="during">
+          <div class="semiCover" id="duringOverlay">
+            <h2 class="text-xs-center semiText">During</h2>
+          </div>
+        </div>
+            <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="duringModal">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class=" text-xs-center semiInfo">
+                    <h2 class="p-y-2">Bliss</h2>
+                    <%= image_tag("http://bit.ly/29Orp3E", :alt => "Atlas", :class => "img-fluid") %>
+                    <p class="p-a-2 m-b-0">
+                      Take a moment to soak it all in, The Chalupa Semi Formal is officially underway. When you arrive at
+                      the pickup point you will look around and see the group of people
+                      that were hand selected to partake in this experience alongside you. Hopefully by this point
+                      you've had time to meet them through previous mixers, but regardless, take this time to tell
+                      interesting life stories and share a laugh as we head over to the venue. The semi will be held at Atlas, one of the finest
+                       restaurants Atlanta has to offer. Before the dinner, pictures of the group will be taken
+                      so these memories can live on long after this night fades. During the dinner, the founders will
+                      have very interesting announcements about a few traditions that you will have the honor
+                      of helping pioneer.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-md-3 noPad semiImage" id="post">
+              <div class="semiCover" id="postOverlay">
+                <h2 class="text-xs-center semiText">After</h2>
+              </div>
+            </div>
+                <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="postModal">
+                  <div class="modal-dialog">
+                    <div class="modal-content semiModal">
+                      <div class=" text-xs-center semiInfo">
+                        <h2 class="p-y-2">Coup De Grace</h2>
+                        <%= image_tag("http://bit.ly/29Ots83", :alt => "Night View", :class => "img-fluid") %>
+                        <p class="p-a-2 m-b-0">
+                          Time for the after party! There's only so much that can be done over dinner, and that's
+                          why we're headed back to campus together to unwind and get to know the group better.
+                          Somebody catch your eye all night? Go talk to them. Someone seem like a possible
+                          business partner? Get their contact information. Great music, great views, and great
+                          people is all that's necessary to cement this night as one you'll never forget. As the moon rises
+                          and falls, take in a deep breath, and prepare to go forth and tell the story of The Chalupa Semi-Formal.
+                        </p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+  </div>
+</div>
+
+<!-- ./Semi Block -->
+<!--  Formal Block-->
+    <div id="formalBlock" class="fullContain">
+      <div class="goldFade">
+      <div class="blackFadeLess">
+        <div class="container" >
+          <div class="row " class="eventDeets" id="formalDeets">
+            <h1 class="col-md-2 p-t-2">Formal</h1>
+            <div class="hidden-lg-up mobileFormal">
+              <h4>Savannah, GA</h4>
+              <h4>Early 2017</h4>
+              <h4>12 invites</h4>
+            </div>
+            <ul class="col-md-8  divider hidden-md-down">
+              <li>Savannah, GA</li>
+              <li>Early 2017</li>
+              <li>12 invites</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<!--  ./Formal Block-->
+<!--  Organizers Block-->
+    <!-- <div id="organizersBlock">
+          <div class="row">
+            <h2 class="m-t-3 m-b-2 text-xs-center">Organizers</h2>
+          <div id="picBlock">
+            <%= image_tag("Joseph_Chalupa.jpg", :alt => "rss feed", :class => "orgPic img-rounded") %>
+            <%= image_tag("Doug_Chalupa.jpg", :alt => "rss feed", :class => "orgPic img-rounded") %>
+            <%= image_tag("Arsene_Chalupa.jpg", :alt => "rss feed", :class => "orgPic img-rounded") %>
+            <%= image_tag("Sydney_Chalupa.jpg", :alt => "rss feed", :class => "orgPic img-rounded") %>
+            <%= image_tag("Annika_Chalupa.jpg", :alt => "rss feed", :class => "orgPic img-rounded") %>
+          </div>
+    </div>
+  </div> -->
+<!--  ./Organizers Block-->
+<!--  FAQ Block-->
+    <div id="FAQ">
+            <h2 class="m-t-3 m-b-3 p-a-3 text-xs-center">Frequently Asked Questions</h2>
+
+         <div class="faq">
+         <p class="question"><strong>Q: Why are you guys doing this?</strong></p>
+         <p class="answer">A: I (Joseph) as a junior in college was always intruguied about the next
+         level prom events that are Greek formals. Instead of just trying to attend one like a normal
+       person, I wondered if it was possible to make my own without any knowdlege of what actually
+       goes on at formals. After awhile, what started out as a joke has now turned into The
+         Chalupa Formal. I began this as an opportunity for any student, Greek or Independent, to
+         get a chance to take part in an overly extravagant night for no other reasons than to
+         get away from school for a moment and have a surreal college experience.
+        </p>
+        </div>
+
+        <div class="faq">
+        <p class="question"><strong>Q: So this is seriously happening?</strong></p>
+        <p class="answer">A: Yup.</p>
+       </div>
+
+         <div class="faq">
+         <p class="question"><strong>Q: How do I get an invite?</strong></p>
+         <p class="answer">A: We will have a two round guest selection process. An application will
+         go live late August that everyone who is interested in attending must fill out. After carefully reviewing
+        each application, we will set up interviews with the second rounders. We will then
+        select a handful of people to join us at the Chalupa Formal.</p>
+        </div>
+
+
+        <div class="faq">
+        <p class="question"><strong>Q: Really? Interviews? Isn't that a bit much?</strong></p>
+        <p class="answer">A: Although we wish we could invite everyone interested, that's just not feasible
+         for our first go around. Furthermore, we want to ensure that all of our guests are really interested
+       and committed to being a part of this experience with us. We feel that this selection process is our
+        best option to build a strong guest list.</p>
+        </div>
+
+        <div class="faq">
+        <p class="question"><strong>Q: Are dates allowed?</strong></p>
+        <p class="answer">A: We have made the difficult decision to not allow dates at The Chalupa Formal.
+        In order to invite as many people as possible without dealing with an overwhelming
+        number of people, only invited guests will be allowed to attend. There may be room
+        to invite dates to the after party.</p>
+        </div>
+
+        <div class="faq">
+        <p class="question"><strong>Q: Are there fees associated with these events?</strong></p>
+        <p class="answer">A: Yes. Because we aren't funded by anyone but ourselves, we will require each guest
+        to pay a not yet determined fee to participate. We will only ask for enough to cover
+        the activities and gifts associated with the event and no more. We are hoping to keep costs
+        as low as possible ($50 or less). </p>
+        </div>
+
+        <div class="faq">
+        <p class="question"><strong>Q: What can or can't I do at the Chalupa Formal?</strong></p>
+        <p class="answer">A: We will discuss this in great detail with all guests who accept their invite. We want
+          all of our guests to feel comfortable and safe during our events.</p>
+        </div>
+  </div>
+<!--  ./FAQ Block-->
+<!--  Invite Block-->
+    <div class="container" id="inviteBlock">
+          <h1 class="display-2 mainTitle text-xs-center">Want An Invite?</h1>
+          <div class="col-lg-6 col-lg-offset-3 p-y-3">
+            <%= form_for @user , url: {action: "create"} do |f| %>
+
+            <div class="input-group">
+                  <%= f.email_field :email, :class => 'form-control' , :placeholder => "Enter email"%>
+                <span class="input-group-btn">
+                      <%= f.submit 'Sign Up', :class => 'btn btn-secondary' %>
+
+                </span>
+
+            </div>
+           </div>
+         <% end %>
+
+    </div>
+<!--  ./Invite Block-->
+
+
+
+
+
+    <!-- jQuery first, then Bootstrap JS. -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="chalupa.js"></script>
+  </body>
+</html>
