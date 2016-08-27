@@ -3,13 +3,16 @@ var break_medium = 768;
 var break_large = 992;
 var break_xlarge= 1200;
 $(document).ready(function(){
-  $("#preOverlay").hide()
-  $("#postOverlay").hide();
-  $("#duringOverlay").hide();
+  if ($(window).width() >= break_large) {
+    $("#preOverlay").hide()
+    $("#postOverlay").hide();
+    $("#duringOverlay").hide();
+  }
   // $("#preBlock").hide();
   // $("#duringBlock").hide();
   // $("#postBlock").hide();
-  if ($(document).width >= break_large) {
+  if ($(window).width() >= break_large) {
+    console.log("good")
   $("#formalDeets").hide();
   }
   $("#pre").click(function(){
@@ -26,13 +29,13 @@ $(document).ready(function(){
     $("#preOverlay").fadeIn()},
     function(){$("#preOverlay").fadeOut()});
 
-    $("#during").hover(function(){
-      $("#duringOverlay").fadeIn()},
-      function(){$("#duringOverlay").fadeOut()});
+  $("#during").hover(function(){
+    $("#duringOverlay").fadeIn()},
+    function(){$("#duringOverlay").fadeOut()});
 
-    $("#post").hover(function(){
-      $("#postOverlay").fadeIn()},
-      function(){$("#postOverlay").fadeOut()});
+  $("#post").hover(function(){
+    $("#postOverlay").fadeIn()},
+    function(){$("#postOverlay").fadeOut()});
 
 
   //

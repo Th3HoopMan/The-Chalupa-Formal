@@ -8,7 +8,7 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
-    <link rel="stylesheet" type="text/css" href="style.css">
+
   </head>
   <body>
 
@@ -149,117 +149,98 @@
 <div class="text-xs-center hidden-sm-down">_______________________________________________________________________</div>
 <!-- Semi Block -->
 
-  <div class="hidden-lg-up semiFormalMobile">
-    <div class="row eventDeets">
-      <h3 class=" p-y-2">Semi Formal</h3>
-      <ul class="p-a-1">
+
+
+  <div class="semiFormalMobile fullContain hidden-md-up">
+    <div class="row " class="eventDeets" id="SemiFormalDeets">
+      <h1 class="col-md-2 p-t-2"> Semi Formal</h1>
+      <div class="hidden-lg-up mobileFormal">
+        <li>Atlanta, GA</li>
+        <li>November 30, 2016</li>
         <li>Atlas</li>
-        <li>September 30, 2016</li>
         <li>12 invites</li>
-      </ul>
-    </div>
-
-    <div class="mobileButton" id="preMobile">
-      <h2>Before</h2>
-    </div>
-    <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="preModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class=" text-xs-center semiInfo ">
-              <h2 class="p-y-2">Preparations</h2>
-              <%= image_tag("http://bit.ly/29OoKak", :alt => "Limo", :class => "img-fluid") %>
-              <p class="p-a-2 m-b-0">
-                This is it. You are approaching greatness, but there are a few things you must do first.
-                Put on your finest attire. This is not a pickup game of basketball you're going to,
-                this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
-                snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
-                start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
-                but greatnesss waits for no one, so you better be on time.
-              </p>
-          </div>
-        </div>
       </div>
     </div>
 
-    <div class="mobileButton" id="duringMobile">
-      <h2>During</h2>
-    </div>
-    <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="duringModal">
-      <div class="modal-dialog">
-        <div class="modal-content">
-          <div class=" text-xs-center semiInfo">
-            <h2 class="p-y-2">Bliss</h2>
-            <%= image_tag("http://bit.ly/29Orp3E", :alt => "Atlas", :class => "img-fluid") %>
-            <p class="p-a-2 m-b-0">
-              Take a moment to soak it all in, The Chalupa Semi Formal is officially underway. When you arrive at
-              the pickup point you will look around and see the group of remarkable people
-              that were hand selected to partake in this experience alongside you.  The semi will be held at Atlas, one of the finest
-               restaurants Atlanta has to offer. During the dinner, the founders will
-              have very interesting announcements about a few traditions that you will have the honor
-              of helping pioneer.
-            </p>
-          </div>
-        </div>
+    <div class="semiBodyMobile hidden-md-up">
+      <div class=" text-xs-center semiInfoMobile">
+        <h2 class="p-y-2">Preparations</h2>
+        <%= image_tag("http://angelcitylimo.com/wp-content/uploads/2013/10/limo-e1379031687650-1.jpg", :alt => "Limo", :class => "img-fluid") %>
+        <p class="p-a-2 m-b-0">
+          This is it. You are approaching greatness, but there are a few things you must do first.
+          Put on your finest attire. This is not a pickup game of basketball you're going to,
+          this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
+          snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
+          start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
+          but greatnesss waits for no one, so you better be on time.
+        </p>
       </div>
-    </div>
 
-    <div class="mobileButton" id="postMobile">
-      <h2>After</h2>
-    </div>
-    <div class="modal fade " tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="postModal">
-      <div class="modal-dialog">
-        <div class="modal-content semiModal">
-          <div class=" text-xs-center semiInfo">
-            <h2 class="p-y-2">Coup De Grace</h2>
-            <%= image_tag("http://bit.ly/29Ots83", :alt => "Night View", :class => "img-fluid") %>
-            <p class="p-a-2 m-b-0">
-              There's only so much that can be done over dinner, and that's
-              why we're headed back to campus together to unwind and get to know the group better.
-              Somebody catch your eye all night? Go talk to them. Someone seem like a possible
-              business partner? Get their contact information. As the moon rises
-              and falls, take in a deep breath, and prepare to go forth and tell the story of The Chalupa Semi-Formal.
-            </p>
-          </div>
-        </div>
+      <div class=" text-xs-center semiInfoMobile">
+        <h2 class="p-y-2">Bliss</h2>
+        <%= image_tag("http://bit.ly/29Orp3E", :alt => "Atlas", :class => "img-fluid") %>
+        <p class="p-a-2 m-b-0">
+          Take a moment to soak it all in, The Chalupa Semi Formal is officially underway. When you arrive at
+          the pickup point you will look around and see the group of people
+          that were hand selected to partake in this experience alongside you. Hopefully by this point
+          you've had time to meet them through previous mixers, but regardless, take this time to tell
+          interesting life stories and share a laugh as we head over to the venue. The semi will be held at Atlas, one of the finest
+           restaurants Atlanta has to offer. Before the dinner, pictures of the group will be taken
+          so these memories can live on long after this night fades. During the dinner, the founders will
+          have very interesting announcements about a few traditions that you will have the honor
+          of helping pioneer.
+        </p>
+      </div>
+
+      <div class=" text-xs-center semiInfoMobile">
+        <h2 class="p-y-2">Coup De Grace</h2>
+        <%= image_tag("http://bit.ly/29Ots83", :alt => "Night View", :class => "img-fluid") %>
+        <p class="p-a-2 m-b-0">
+          Time for the after party! There's only so much that can be done over dinner, and that's
+          why we're headed back to campus together to unwind and get to know the group better.
+          Somebody catch your eye all night? Go talk to them. Someone seem like a possible
+          business partner? Get their contact information. Great music, great views, and great
+          people is all that's necessary to cement this night as one you'll never forget. As the moon rises
+          and falls, take in a deep breath, and prepare to go forth and tell the story of The Chalupa Semi-Formal.
+        </p>
       </div>
     </div>
   </div>
+<div class="container fullContain semiFormal hidden-sm-down">
+  <div class="row eventDeets">
+    <h4 class="col-md-2 p-t-2">Semi Formal</h4>
+    <ul class="col-md-10  divider">
+      <li>Atlas</li>
+      <li>September 30, 2016</li>
+      <li>12 invites</li>
+    </ul>
+  </div>
 
-  <div class="container fullContain semiFormal hidden-md-down">
-    <div class="row eventDeets">
-      <h4 class="col-md-2 p-t-2">Semi Formal</h4>
-      <ul class="col-md-10  divider">
-        <li>Atlas</li>
-        <li>September 30, 2016</li>
-        <li>12 invites</li>
-      </ul>
-    </div>
-
-  <div class="semiBody">
+  <div class="semiBody hidden-sm-down">
     <div class="col-md-3 noPad semiImage" id="pre">
       <div class="semiCover" id="preOverlay">
         <h2 class="text-xs-center semiText">Before</h2>
       </div>
     </div>
+
         <div class="modal fade semiModal" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true" id="preModal">
           <div class="modal-dialog">
             <div class="modal-content">
-              <div class=" text-xs-center semiInfo ">
-                  <h2 class="p-y-2">Preparations</h2>
-                  <%= image_tag("http://bit.ly/29OoKak", :alt => "Limo", :class => "img-fluid") %>
-                  <p class="p-a-2 m-b-0">
-                    This is it. You are approaching greatness, but there are a few things you must do first.
-                    Put on your finest attire. This is not a pickup game of basketball you're going to,
-                    this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
-                    snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
-                    start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
-                    but greatnesss waits for no one, so you better be on time.
-                  </p>
+              <div class=" text-xs-center semiInfo">
+                <h2 class="p-y-2">Preparations</h2>
+                <%= image_tag("http://angelcitylimo.com/wp-content/uploads/2013/10/limo-e1379031687650-1.jpg", :alt => "Limo", :class => "img-fluid") %>
+                <p class="p-a-2 m-b-0">
+                  This is it. You are approaching greatness, but there are a few things you must do first.
+                  Put on your finest attire. This is not a pickup game of basketball you're going to,
+                  this is one of the greatest events you'll ever attend. Once you're dressed and ready to go,
+                  snap as many selfies as you'd like and take a moment to collect yourself. As the start of the event draws near,
+                  start heading to limo pick up point. I understand that being fashionably late is usually the cool thing to do,
+                  but greatnesss waits for no one, so you better be on time.
+                </p>
               </div>
             </div>
           </div>
         </div>
-
         <div class="col-md-3 noPad semiImage" id="during">
           <div class="semiCover" id="duringOverlay">
             <h2 class="text-xs-center semiText">During</h2>
@@ -313,6 +294,7 @@
   </div>
 </div>
 
+
 <!-- ./Semi Block -->
 <!--  Formal Block-->
     <div id="formalBlock" class="fullContain">
@@ -326,7 +308,7 @@
               <h4>Early 2017</h4>
               <h4>12 invites</h4>
             </div>
-            <ul class="col-md-8  divider hidden-md-down">
+            <ul class="col-md-6  divider hidden-md-down">
               <li>Savannah, GA</li>
               <li>Early 2017</li>
               <li>12 invites</li>
@@ -437,8 +419,10 @@
 
 
     <!-- jQuery first, then Bootstrap JS. -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/js/bootstrap.min.js" integrity="sha384-vZ2WRJMwsjRMW/8U7i6PWi6AlO1L79snBrmgiDpgIWJ82z8eA5lenwvxbMV1PAh7" crossorigin="anonymous"></script>
-    <script type="text/javascript" src="chalupa.js"></script>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.0.0/jquery.min.js" integrity="sha384-THPy051/pYDQGanwU6poAc/hOdQxjnOEXzbT+OuUAFqNqFjL+4IGLBgCJC3ZOShY" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.2.0/js/tether.min.js" integrity="sha384-Plbmg8JY28KFelvJVai01l8WyZzrYWG825m+cZ0eDDS1f7d/js6ikvy1+X+guPIB" crossorigin="anonymous"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/js/bootstrap.min.js" integrity="sha384-ux8v3A6CPtOTqOzMKiuo3d/DomGaaClxFYdCu2HPMBEkf6x2xiDyJ7gkXU0MWwaD" crossorigin="anonymous"></script>
+
   </body>
 </html>

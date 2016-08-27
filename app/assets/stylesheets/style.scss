@@ -144,38 +144,41 @@ body {
 
 
 .semiFormalMobile {
+  background: black;
   padding: 0;
-  margin: 3% 8% 8%;
+  margin: 0 8% 3% 8%;
   padding-bottom: 0;
 
-  .eventDeets {
-    margin-top: 2rem;
-    text-align: center;
-    h4 {
-      font-size: 18px;
-    }
-
-    ul {
-      list-style: none;
-      border: 1px solid #ffd700;
-      display: inline-block;
-    }
-  }
 }
 
-.mobileButton {
-  height: 150px;
-  width: 95%;
+#SemiFormalDeets {
   text-align: center;
-  margin: 20px 10px;
-  color: #FAFAFA;
-  border: 1px solid #000;
+  padding: 10px 0 30px 0px;
+  color: white;
+  background-size: cover;
+  background: url(http://www.ilikewallpaper.net/iphone-5-wallpapers/download/10247/Stars-Galaxies-iphone-5-wallpaper-ilikewallpaper_com.jpg);
+  border-bottom: 1px solid #ffd700;
 
-  h2 {
-    margin-top: 15%;
-    -webkit-text-stroke: 1px black;
+  h1 {
+    margin-left: 25px;
+    font-family: 'Dancing Script', serif;
+    font-style: normal;
+    margin-right: 20px;
   }
+
+  ul {
+    font-size: 1.2em;
+    padding-left: 30px;
+    list-style: none;
+    text-align: left;
+  }
+
+  li {
+    list-style: none;
+  }
+
 }
+
 
 #preMobile {
   background: url(bowtie.jpg);
@@ -212,7 +215,6 @@ body {
       list-style: none;
     }
   }
-
 }
 
 
@@ -237,6 +239,28 @@ body {
   h2{
     font-family: 'PT Serif', serif;
     color: #ccac00;
+  }
+}
+
+.semiBodyMobile {
+  width: 100%;
+}
+
+.semiInfoMobile {
+  border-bottom: 1px solid #ffd700;
+  width: 100%;
+  background-color: black;
+  color: #e5e5e5;
+  /*border: 2px solid #ffd700;*/
+
+  h2{
+    font-size: 1.3em;
+    font-family: 'PT Serif', serif;
+    color: #ccac00;
+  }
+
+  p {
+    font-size: .8em;
   }
 }
 
@@ -309,26 +333,28 @@ body {
 /*----------------Formal Section-------------------*/
 
 .mobileFormal {
-
   border-top: 1px solid #FFD700;
   display: inline-block;
   margin-left: 0;
   padding-top: 10px;
 
+  h1 {
+      font-size: 1.4em;
+  }
 
   h4 {
     text-align: center;
-    font-size: 1.1em;
+    font-size: 1.3em;
     padding: 5px;
   }
 
 
      @media screen and (min-width: $break-medium) {
-       background-color: rgba(0, 0, 0, 0.01);
+      background-color: rgba(0, 0, 0, 0.01);
       border-top: none;
       border-left: 1px solid #FFD700;
-      padding-left: 10px;
-      margin-left: -180px;
+      padding-left: 50px;
+      margin-left: -120px;
      }
 }
 
@@ -340,7 +366,7 @@ body {
 
 .blackFadeLess {
 
-  background-color: rgba(0, 0, 0, 0.45);
+  background-color: rgba(0, 0, 0, 0.6);
    top: 0;
    left: 0;
    width: 100%;
@@ -370,61 +396,63 @@ body {
 }*/
 
 .divider {
-  border-left: thin solid black;
+  border-left: thin solid #000;
 }
 
 #formalBlock {
-  height: 700px;
+  margin: auto;
+  height: 400px;
+  max-width: 1500px;
   background: url(http://bit.ly/2aEFzm7);
-  background-size: cover;
+  background-size: contain;
   color: white;
   @media screen and (min-width: $break-medium) {
-    height: 400px;
+    height: 600px;
     background-size: cover;
-    background: url(savannahHome.jpg);
+    background: url(http://www.savannahroofingexperts.com/wp-content/uploads/2014/02/bigstock-Savannah-Georgia-USA-downtow-80153564-e1444061236810.jpg);
   }
 }
 
 #formalDeets {
   text-align: center;
-  padding: 180px 0 0 20px;
+  padding: 100px 0 0 0px;
 
   h1 {
-
     margin-left: 25px;
     font-family: 'Dancing Script', serif;
     font-style: normal;
+    margin-right: 20px;
   }
+
+  ul {
+    font-size: 1.2em;
+    padding-left: 30px;
+    list-style: none;
+    text-align: left;
+  }
+
   @media screen and (min-width: $break-medium) {
-    padding-top: 100px;
+    padding-top: 200px;
     display: block;
 
     h1 {
       font-size: 3em;
       display: block;
-      margin-left: 190px;
+      margin-left: 140px;
       font-family: 'Dancing Script', serif;
       font-style: normal;
+      margin-right: 20px;
+    }
+
+    ul {
+      margin-left: 30px
     }
   }
 
   @media screen and (min-width: $break-large) {
-    padding-top: 20%;
-    padding-left: 35%;
+    padding: 25%  0 0 20%;
   }
 }
-
-#formalDeets h1 {
-  /*color: #ffe34c;*/
-  margin-right: 30px;
-}
-
-#formalDeets ul {
-  font-size: 1.2em;
-  margin: 0;
-  list-style: none;
-}
-
 
 #picBlock {
   margin: 5% auto;
