@@ -7,7 +7,7 @@
     <meta http-equiv="x-ua-compatible" content="ie=edge">
 
     <!-- Bootstrap CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.2/css/bootstrap.min.css" integrity="sha384-y3tfxAZXuh4HwSYylfB+J125MxIs6mR5FOHamPBG064zB+AFeWH94NdvaCBm8qnd" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.3/css/bootstrap.min.css" integrity="sha384-MIwDKRSSImVFAZCVLtU0LMDdON6KVCrZHyVQQj6e8wIEJkW4tvwqXrbMIya1vriY" crossorigin="anonymous">
 
   </head>
   <body>
@@ -102,8 +102,7 @@
                 <p>
                   Think of some people with amazing origin stories: Spiderman, Elon Musk,
                   George P. Burdell, Michelangelo (The ninja turtle not the artist). A strong origin
-                  story is what seperates the Cubones from the Magikarps. Right now we are on the verge
-                  of something truly amazing. Become a part of the catalyst and
+                  story is what seperates the Cubones from the Magikarps. Become a part of the catalyst and
                   help us pioneer the origin story for the first of many great events.
                 </p>
               </div>
@@ -157,7 +156,7 @@
       <div class="hidden-lg-up mobileFormal">
         <li>Atlanta, GA</li>
         <li>November 30, 2016</li>
-        <li>Atlas</li>
+        <li>Atlanta, GA</li>
         <li>12 invites</li>
       </div>
     </div>
@@ -184,7 +183,7 @@
           the pickup point you will look around and see the group of people
           that were hand selected to partake in this experience alongside you. Hopefully by this point
           you've had time to meet them through previous mixers, but regardless, take this time to tell
-          interesting life stories and share a laugh as we head over to the venue. The semi will be held at Atlas, one of the finest
+          interesting life stories and share a laugh as we head over to the venue. The semi will be held at one of the finest
            restaurants Atlanta has to offer. Before the dinner, pictures of the group will be taken
           so these memories can live on long after this night fades. During the dinner, the founders will
           have very interesting announcements about a few traditions that you will have the honor
@@ -206,11 +205,11 @@
       </div>
     </div>
   </div>
-<div class="container fullContain semiFormal hidden-sm-down">
+<div class="fullContain semiFormal hidden-sm-down container ">
   <div class="row eventDeets">
     <h4 class="col-md-2 p-t-2">Semi Formal</h4>
     <ul class="col-md-10  divider">
-      <li>Atlas</li>
+      <li>Atlanta, GA</li>
       <li>September 30, 2016</li>
       <li>12 invites</li>
     </ul>
@@ -257,7 +256,7 @@
                       the pickup point you will look around and see the group of people
                       that were hand selected to partake in this experience alongside you. Hopefully by this point
                       you've had time to meet them through previous mixers, but regardless, take this time to tell
-                      interesting life stories and share a laugh as we head over to the venue. The semi will be held at Atlas, one of the finest
+                      interesting life stories and share a laugh as we head over to the venue. The semi will be held at one of the finest
                        restaurants Atlanta has to offer. Before the dinner, pictures of the group will be taken
                       so these memories can live on long after this night fades. During the dinner, the founders will
                       have very interesting announcements about a few traditions that you will have the honor
@@ -333,18 +332,43 @@
     </div>
   </div> -->
 <!--  ./Organizers Block-->
+
+<!--  Invite Block-->
+    <div class="container" id="inviteBlock">
+          <h1 class="display-2 text-xs-center">Want An Invite?</h1>
+          <a class="btn btn-outline-warning" href="https://goo.gl/forms/Nn6dJwgo6sdwNfnO2" role="button" id="inviteButton">Apply Now!</a>
+  
+
+          <!-- Email Code I'm too Proud to Delete -->
+          <!-- <div class="col-lg-6 col-lg-offset-3 p-y-3">
+            <%= form_for @user , url: {action: "create"} do |f| %>
+
+            <div class="input-group">
+                  <%= f.email_field :email, :class => 'form-control' , :placeholder => "Enter email"%>
+                <span class="input-group-btn">
+                      <%= f.submit 'Sign Up', :class => 'btn btn-secondary' %>
+
+                </span>
+
+            </div>
+           </div>
+         <% end %> -->
+
+    </div>
+<!--  ./Invite Block-->
+
 <!--  FAQ Block-->
     <div id="FAQ">
             <h2 class="m-t-3 m-b-3 p-a-3 text-xs-center">Frequently Asked Questions</h2>
 
          <div class="faq">
          <p class="question"><strong>Q: Why are you guys doing this?</strong></p>
-         <p class="answer">A: I (Joseph) as a junior in college was always intruguied about the next
+         <p class="answer">A: I (Joseph) as a non-Greek college student was always intruguied about the next
          level prom events that are Greek formals. Instead of just trying to attend one like a normal
        person, I wondered if it was possible to make my own without any knowdlege of what actually
        goes on at formals. After awhile, what started out as a joke has now turned into The
          Chalupa Formal. I began this as an opportunity for any student, Greek or Independent, to
-         get a chance to take part in an overly extravagant night for no other reasons than to
+         get a chance to take part in an overly extravagant night for no other reason than to
          get away from school for a moment and have a surreal college experience.
         </p>
         </div>
@@ -375,7 +399,7 @@
         <p class="question"><strong>Q: Are dates allowed?</strong></p>
         <p class="answer">A: We have made the difficult decision to not allow dates at The Chalupa Formal.
         In order to invite as many people as possible without dealing with an overwhelming
-        number of people, only invited guests will be allowed to attend. There may be room
+        number of people, only invited guests will be allowed to attend. Although there may be room
         to invite dates to the after party.</p>
         </div>
 
@@ -394,25 +418,7 @@
         </div>
   </div>
 <!--  ./FAQ Block-->
-<!--  Invite Block-->
-    <div class="container" id="inviteBlock">
-          <h1 class="display-2 mainTitle text-xs-center">Want An Invite?</h1>
-          <div class="col-lg-6 col-lg-offset-3 p-y-3">
-            <%= form_for @user , url: {action: "create"} do |f| %>
 
-            <div class="input-group">
-                  <%= f.email_field :email, :class => 'form-control' , :placeholder => "Enter email"%>
-                <span class="input-group-btn">
-                      <%= f.submit 'Sign Up', :class => 'btn btn-secondary' %>
-
-                </span>
-
-            </div>
-           </div>
-         <% end %>
-
-    </div>
-<!--  ./Invite Block-->
 
 
 

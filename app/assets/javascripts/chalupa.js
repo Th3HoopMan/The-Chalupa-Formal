@@ -4,6 +4,7 @@ var break_large = 992;
 var break_xlarge= 1200;
 $(document).ready(function(){
   if ($(window).width() >= break_large) {
+    console.log("Good");
     $("#preOverlay").hide()
     $("#postOverlay").hide();
     $("#duringOverlay").hide();
@@ -93,6 +94,6 @@ $(document).ready(function(){
 
 
      $(".question").click(function(){
-          $(this).siblings().toggle();
+          $(this).siblings().slideToggle();
      });
 });

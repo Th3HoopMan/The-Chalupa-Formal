@@ -146,7 +146,7 @@ body {
 .semiFormalMobile {
   background: black;
   padding: 0;
-  margin: 0 8% 3% 8%;
+  margin: 0 8% 8% 8%;
   padding-bottom: 0;
 
 }
@@ -202,7 +202,7 @@ body {
 .semiFormal {
   padding: 0;
   margin: 3% 8% 8%;
-  padding-bottom: 0;
+  padding-bottom: 80px;
 
   .eventDeets {
     margin-top: 2rem;
@@ -220,7 +220,7 @@ body {
 
 
 .semiBlock {
-  margin: 2% 0 5% 12%
+  margin: 2% 0 8% 12%
 }
 
 .semiBody {
@@ -251,6 +251,8 @@ body {
   width: 100%;
   background-color: black;
   color: #e5e5e5;
+  margin: 0;
+  padding: 0;
   /*border: 2px solid #ffd700;*/
 
   h2{
@@ -292,6 +294,10 @@ body {
    height: 100%;
    font-family: 'PT Serif', serif;
    color: white;
+
+   @media screen and (max-width: 991px) {
+     background-color: rgba(0, 0, 0, 0.3);
+   }
 }
 
 .semiText {
@@ -396,7 +402,7 @@ body {
 }*/
 
 .divider {
-  border-left: thin solid #000;
+  border-left: thin solid #e5e5e5;
 }
 
 #formalBlock {
@@ -404,7 +410,7 @@ body {
   height: 400px;
   max-width: 1500px;
   background: url(http://bit.ly/2aEFzm7);
-  background-size: contain;
+  background-size: cover;
   color: white;
   @media screen and (min-width: $break-medium) {
     height: 600px;
@@ -476,7 +482,31 @@ body {
 }
 
 #inviteBlock {
-  margin-bottom: 12rem;
+
+  h1 {
+  font-family: 'Dancing Script', cursive;
+  margin-top: 200px;
+  font-size: 50px;
+  margin-top: 200px;
+  margin-bottom: 50px;
+  }
+  @media screen and (min-width: $break-large) {
+    h1 {
+    font-size: 75px;
+    }
+  }
+}
+
+#inviteButton {
+  padding-top: 15px;
+  margin-left: 25%;
+  margin-bottom: 100px;
+  width: 50%;
+  height: 50px;
+
+    &:hover {
+      color:#323232;
+    }
 }
 
 .formalBody {
